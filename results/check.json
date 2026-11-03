@@ -1,0 +1,40 @@
+{
+ "model": "aoa",
+ "repo": "LM_2021_Attention_on_Attention-pytorch",
+ "target_repo": "LM_Dec_Attention_AttentionOnAttention",
+ "category": "Attention",
+ "upstream": "vendored from RichardMinsooGo/LM_2021_Attention_on_Attention-pytorch (see LICENSE in vendor folder if present)",
+ "unified": [
+  "AoA attention blocks + FF/embedding/head written here (module has no causal mask)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "check",
+ "started": "2026-11-02 11:23:07",
+ "smoke": false,
+ "params": 24938496,
+ "causality": {
+  "causal": false,
+  "uses_input": true,
+  "worst_leak": 0.002251923084259033,
+  "min_effect": 1.6162440776824951,
+  "logit_scale": 2.6049027906188966,
+  "length": 256,
+  "positions": [
+   17,
+   63,
+   100,
+   130,
+   200
+  ]
+ },
+ "data_checks": [
+  "enwik8 train bytes  90,000,000 expected  90,000,000 OK",
+  "enwik8 valid bytes   5,000,000 expected   5,000,000 OK",
+  "enwik8 test  bytes   5,000,000 expected   5,000,000 OK",
+  "enwik8 distinct byte values in first 10M train bytes: 200 (vocab 256)",
+  "recall L=512 random gap: 16 answers/sample, keys/values/distractors disjoint OK",
+  "recall L=512 max gap: 16 answers/sample, keys/values/distractors disjoint OK"
+ ],
+ "seconds": 1.7
+}
