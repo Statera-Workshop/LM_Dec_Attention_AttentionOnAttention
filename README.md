@@ -1,3 +1,10 @@
+<!-- PAI-SG-LINKS:BEGIN -->
+## Project Links
+
+- [Project Portal](https://statera-workshop.github.io/#repo-lm_dec_attention_attentiononattention)
+- [Statera Workshop Portal](https://statera-workshop.github.io/)
+<!-- PAI-SG-LINKS:END -->
+
 # LM_Dec_Attention_AttentionOnAttention
 
 AttentionOnAttention - Attention family, decoder-only byte-level language model, standardised in the Statera Working Group Language Model library.
@@ -39,10 +46,3 @@ pip install torch==2.5.1 einops numpy
 python run.py check aoa
 python run.py lm02 aoa      # enwik8 is downloaded to data/ on first use
 ```
-
-<!-- PAI-SG-LINKS:BEGIN -->
-## Project Links / 프로젝트 링크
-
-- [Project Portal / 프로젝트 포털](https://statera-workshop.github.io/#repo-lm_dec_attention_attentiononattention)
-- [Statera Workshop Portal / Workshop 포털](https://statera-workshop.github.io/)
-<!-- PAI-SG-LINKS:END -->
